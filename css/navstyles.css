@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: bisque;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: #fc466b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f5efb, #fc466b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    min-width: 80%;
+}
+.navlinks li {
+    list-style: none;
+}
+.navlinks a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.hamburger {
+    display: none;
+}
+.home{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: cursive;
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .navlinks {
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        min-height: 92vh;
+        border-radius: 0 0 0 5%;
+        width: 50%;
+        top: 8vh;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.25s ease-in;
+    }
+    .navlinks a {
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+    }
+    .navlinks li{
+        opacity: 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+    }
+    .navlinks.open {
+        transform: translateX(0%);
+    }
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* keyframes */
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX((0px));
+        }
+    }
+   
+    
+}
