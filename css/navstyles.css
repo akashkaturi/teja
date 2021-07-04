@@ -61,17 +61,24 @@ body {
 	display: none;
 }
 .home {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
 	font-family: 'Satisfy', cursive;
-	font-size: 3rem;
-    min-height: 50vh;
+	font-size: 2rem;
+    height: 80vh;
 
 }
 
 @media screen and (max-width: 768px) {
+    	.home {
+		display: grid;
+		justify-content: center;
+		align-content: center;
+		font-family: 'Satisfy', cursive;
+		font-size: 2rem;
+		height: 40vh;
+	}
 	html,
 	body {
 		position: relative;
@@ -96,7 +103,7 @@ body {
 		z-index: 2;
 		position: absolute;
 		right: 0px;
-		min-height: 50vh;
+		min-height: 30vh;
 		border-radius: 0 0 0 5%;
 		width: 50%;
 		top: 60px;
