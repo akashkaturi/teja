@@ -10,7 +10,7 @@ body {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	max-height: 50px;
+	min-height: 60px;
 	background: #11998e; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(
@@ -71,14 +71,29 @@ body {
 		position: relative;
 		overflow-x: hidden;
 	}
+	.nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 60px;
+		background: #11998e; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(
+			to right,
+			#38ef7d,
+			#11998e
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
 	.navlinks {
+		margin: 0;
 		z-index: 2;
 		position: absolute;
 		right: 0px;
-		min-height: 92vh;
+		min-height: 50vh;
 		border-radius: 0 0 0 5%;
 		width: 50%;
-		top: 8vh;
+		top: 60px;
 		background-color: white;
 		color: black;
 		display: flex;
@@ -133,4 +148,6 @@ body {
 			transform: translateX((0px));
 		}
 	}
+
+	
 }

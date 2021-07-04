@@ -97,3 +97,66 @@ ul li {
 .bottom {
 	margin-bottom: 100px;
 }
+
+@media screen and (max-width: 768px) {
+
+    p {
+		font-size: 1rem;
+		line-height: 30px;
+	}
+	.headp {
+		text-align: center;
+		font-weight: bolder;
+		font-size: 1rem;
+	}
+	ul li {
+		list-style: none;
+	}
+	.content {
+		padding: 0 0rem;
+		margin: 2rem 0;
+	}
+	.content h2 {
+		color: black;
+	}
+	/* .content p {
+		font-size: 1.2rem;
+	} */
+	.image {
+		text-align: center;
+		max-width: 200px;
+		display: block;
+		margin: 0 auto 0 auto;
+		border-radius: 2rem;
+		box-shadow: 5px 5px 20px black;
+	}
+	.deforestation {
+		padding: 0 10px;
+	}
+	.deforestation .image {
+		display: block;
+		margin: 0 auto 0 auto;
+	}
+	.deforestation p {
+		font-size: 1rem;
+	}
+	.effects_list {
+        position: relative;
+padding-left: 0px;
+font-size: 1rem;
+	
+		font-size: 1rem;
+	}
+	.effects_list ol li {
+		line-height: 30px;
+	}
+	.effects {
+		padding: 0 10px;
+	}
+	.ideas {
+		padding: 0 10px;
+	}
+	.bottom {
+		margin-bottom: 100px;
+	}
+}
