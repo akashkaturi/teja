@@ -86,8 +86,16 @@ body {
 		align-content: center;
 		font-family: 'Satisfy', cursive;
 		font-size: 2rem;
-		height: 40vh;
+		height: 80vh;
 	}
+    .home h1{
+    text-align: center;
+}
+.home p{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0rem;
+}
 	html,
 	body {
 		position: relative;
