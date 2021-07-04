@@ -1,38 +1,76 @@
-:root{
-    --clr_green:#66DE93;
-    --clr_cream:#FFEAC9;
-    --clr_red:#FF616D;
-    --clr_dark_red:#D83A56;
+:root {
+	--clr_green: #66de93;
+	--clr_cream: #ffeac9;
+	--clr_red: #ff616d;
+	--clr_dark_red: #d83a56;
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #EDFFA9;
-    font-size: 1em;
-    scroll-behavior: smooth;
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: bisque;
+	font-size: 1em;
+	scroll-behavior: smooth;
 }
-h1{
-    text-align: center;
-    color: black;
-   
+h1 {
+	text-align: center;
+	color: black;
 }
-.headp{
-    text-align: center;
-    font-weight: bolder;
+p{
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.headp {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+ul li {
+	list-style: none;
+}
+.content {
+	padding: 0 3rem 0 0rem;
+	margin: 2rem 0;
+}
+.content h2 {
+	color: black;
+}
+.content p {
+	font-size: 1.2rem;
+}
+.image {
+	text-align: center;
+	max-width: 400px;
+	display: block;
+	margin: 0 auto 0 auto;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px black;
+}
+.deforestation {
+	padding:  10px 2rem 0;
+}
+.deforestation .image {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+.deforestation p{
     font-size: 1.2rem;
 }
-li{
-    list-style: none;
-}
-.content{
-    padding: 0 3rem 0 0rem;
-    margin: 2rem 0;;
-}
-.content h2{
-    color: black;
-}
-.content p{
- 
+.effects_list {
+    position: relative;
+    padding-left:100px;
     font-size: 1.2rem;
+}
+.effects_list ol li{
+    line-height: 30px;
+}
+.effects{
+    padding:20px 50px 0 70px;
+}
+.ideas{
+    padding:10px 50px 0 70px;
+    
+}
+.bottom{
+    margin-bottom: 100px;
 }
