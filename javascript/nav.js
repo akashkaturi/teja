@@ -16,4 +16,20 @@ burger.addEventListener('click',()=>{
 
 })
 
+window.addEventListener('scroll',()=>{
+    var scroll=document.querySelector('.scrollTop');
+    if(screen.width>768){
+    scroll.classList.toggle("active",window.scrollY>250);
+    }
+    else{
+        
+         scroll.classList.toggle('active', window.scrollY > 150);
+    }
+})
 
+function scrollToTop(){
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    })
+}

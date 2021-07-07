@@ -16,6 +16,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
 h1 {
 	text-align: center;
 	color: black;
@@ -68,6 +69,7 @@ p {
 	color: black;
 }
 .content p {
+	padding: 10px 100px 0 50px;
 	font-size: 1.2rem;
 }
 .image {
@@ -99,14 +101,30 @@ p {
 	line-height: 30px;
 }
 .effects {
-	padding: 20px 50px 0 70px;
+	padding: 10px 100px 0 50px;
 }
 
 .ideas {
-	padding: 10px 50px 0 70px;
+	max-width: 1080px;
+	padding: 10px 100px 0 50px;
 }
 .bottom {
 	margin-bottom: 100px;
+}
+.scrollTop{
+	position: fixed;
+	left: 94%;
+	top:30%;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+	
+}
+.scrollTop.active{
+	visibility: visible;
+	opacity: 1;
+	top:88%;
 }
 
 @media screen and (max-width: 768px) {
@@ -168,4 +186,19 @@ p {
 	.bottom {
 		margin-bottom: 100px;
 	}
+	.scrollTop{
+	position: fixed;
+	left: 85%;
+	top:30%;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+	
+}
+.scrollTop.active{
+	visibility: visible;
+	opacity: 0.5;
+	top:88%;
+}
 }
