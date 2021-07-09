@@ -16,7 +16,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+body::-webkit-scrollbar {
+    width: 0.1rem;
+}
 
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: greenyellow;
+}
 h1 {
 	text-align: center;
 	color: black;
@@ -64,6 +74,7 @@ p {
 .content {
 	padding: 0 3rem 0 0rem;
 	margin: 2rem 0;
+	list-style:disc;
 }
 .content h2 {
 	color: black;
@@ -142,6 +153,10 @@ p {
 	.content {
 		padding: 0 0rem;
 		margin: 2rem 0;
+		
+	}
+	.content ul li{
+		list-style: none;
 	}
 	.content h2 {
 		color: black;
