@@ -91,6 +91,15 @@ p {
 	border-radius: 2rem;
 	box-shadow: 5px 5px 20px black;
 }
+.chartDesktop {
+	text-align: center;
+	max-width: 400px;
+	height: auto;
+	display: block;
+	margin-left: 25px;
+	border-radius: 2rem;
+	box-shadow: 5px 5px 20px black;
+}
 .img1 {
 	display: none;
 }
@@ -106,8 +115,25 @@ p {
 }
 .effects_list {
 	position: relative;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.effects_list ul li {
+	line-height: 75px;
+	list-style: none;
+	
+}
+.chart{
+	display: none;
+}
+.effects_list_mobile {
+	position: relative;
 	padding-left: 100px;
 	font-size: 1.2rem;
+	display: none;
 }
 .effects_list ol li {
 	line-height: 30px;
@@ -204,18 +230,32 @@ p {
 	.deforestation p {
 		font-size: 1rem;
 	}
+	.effects_list_mobile {
+		position: relative;
+		padding-left: 0px;
+		font-size: 1rem;
+		display: block;
+
+		
+	}
+	.effects_list_mobile ol li {
+		line-height: 30px;
+	}
 	.effects_list {
 		position: relative;
 		padding-left: 0px;
 		font-size: 1rem;
+		display: none;
 
-		font-size: 1rem;
 	}
 	.effects_list ol li {
 		line-height: 30px;
 	}
 	.effects {
 		padding: 0 10px;
+	}
+	.chart{
+		display: block;
 	}
 	.ideas {
 		padding: 0 10px;
