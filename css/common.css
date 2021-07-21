@@ -145,9 +145,11 @@ p {
 }
 .read1,.read2,.read3,.read4,.read5 {
 	padding: 5px;
-	background-color: rgb(255, 98, 98);
+	background-color: rgb(252, 125, 125);
 	color: black;
 	display: inline-block;
+	border-radius: 5px;
+	border: black;
 }
 .img1,.img2,.img3,.img4,.img5 {
 	display: none;
